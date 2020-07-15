@@ -3,8 +3,8 @@
         <div class="col-xs-12">
             <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
             <p *ngIf="isDisplayed">Secret Password = tuna</p>
-            <div *ngFor="let logItem of log; index as i" [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
-                [ngClass]="{'white-text': i >= 5}">
+            <div *ngFor="let logItem of log; let i = index"
+                [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': i >= 4}">
                 {{ logItem }}</div>
         </div>
     </div>

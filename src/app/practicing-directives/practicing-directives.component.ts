@@ -17,7 +17,7 @@ export class PracticingDirectivesComponent implements OnInit {
 
   onToggleDetails() {
     this.isDisplayed = !this.isDisplayed;
-    this.log.push(Date.now());
+    this.log.push(new Date);
   }
 
 }
