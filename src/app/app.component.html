@@ -8,7 +8,18 @@
             <!-- <app-success-alert></app-success-alert> -->
             <!-- <app-practicing-databinding></app-practicing-databinding> -->
             <!-- <app-servers></app-servers> -->
-            <app-practicing-directives></app-practicing-directives>
+            <!-- <app-practicing-directives></app-practicing-directives> -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <app-gamecontrol (intervalFired)="onIntervalFired($event)"></app-gamecontrol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+                    <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+                </div>
+            </div>
         </div>
     </div>
 </div>

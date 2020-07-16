@@ -9,6 +9,9 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { PracticingDatabindingComponent } from './practicing-databinding/practicing-databinding.component';
 import { PracticingDirectivesComponent } from './practicing-directives/practicing-directives.component';
+import { GameControlComponent } from './gamecontrol/gamecontrol.component';
+import { EvenComponent } from './even/even.component';
+import { OddComponent } from './odd/odd.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PracticingDirectivesComponent } from './practicing-directives/practicin
     WarningAlertComponent,
     SuccessAlertComponent,
     PracticingDatabindingComponent,
-    PracticingDirectivesComponent
+    PracticingDirectivesComponent,
+    GameControlComponent,
+    EvenComponent,
+    OddComponent
   ],
   imports: [
     BrowserModule,
