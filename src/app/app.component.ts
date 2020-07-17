@@ -16,13 +16,16 @@ import { EvenComponent } from './even/even.component';
 export class AppComponent {
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
+  onlyOdd: boolean = false;
 
 
   onIntervalFired(firedNumber: number) {
     if (firedNumber % 2 === 0) {
       this.evenNumbers.push(firedNumber);
+      this.onlyOdd = true;
     } else {
       this.oddNumbers.push(firedNumber);
+      this.onlyOdd = false;
     }
   }
 }

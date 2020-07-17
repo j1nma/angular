@@ -22,6 +22,7 @@
             </div>
             <p appBasicHighlight>Style me with basic directive!</p>
             <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with better directive!</p>
+            <div *appUnless="onlyOdd">Show when onlyOdd is false!</div>
         </div>
     </div>
 </div>
