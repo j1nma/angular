@@ -17,6 +17,7 @@ export class AppComponent {
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
   onlyOdd: boolean = false;
+  value = 100;
 
 
   onIntervalFired(firedNumber: number) {
